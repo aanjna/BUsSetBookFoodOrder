@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.book.bus.busbooking">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BusServices"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderFood"
+            android:label="@string/title_activity_order_food"
+            android:parentActivityName=".BusServices">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.book.bus.busbooking.BusServices" />
+        </activity>
+        <activity
+            android:name=".PickupFood"
+            android:label="@string/title_activity_pickup_food"
+            android:parentActivityName=".OrderFood">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.book.bus.busbooking.OrderFood" />
+        </activity>
+        <activity android:name=".OrderTikitActivity"></activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity android:name=".SelectfoodCheckoutActivity"></activity>
+        <activity android:name=".MainActivity">
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity android:name=".AppIntroActivity"></activity>
+        <activity android:name=".MapsActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".WalletActivity"></activity>
+    </application>
+
+</manifest>

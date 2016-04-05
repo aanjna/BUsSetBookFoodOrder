@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/order_food_r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/red">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BUS"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_bus" />
+
+            <TextView
+                android:id="@+id/tv_routenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4A"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_busname"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VIA"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_busname"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_via"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ambrose"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_bus" />
+
+            <TextView
+                android:id="@+id/tv_rout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3:30PM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_bus" />
+        </LinearLayout>
+
+        <com.book.bus.busbooking.RoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img4" />
+    </TableRow>
+</LinearLayout>

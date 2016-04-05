@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/imgback"
+    android:weightSum="3"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/main_next_bus_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <com.book.bus.busbooking.RoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Next Bus Stop"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/order_food_text_size_bus"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_order_meal_ongo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order Meal On the Go"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/order_food_text_size_bus"/>
+        <com.book.bus.busbooking.RoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_find_route_bus_trip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <com.book.bus.busbooking.RoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/imag"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Find Routes for Bus Trip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/order_food_text_size_bus"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

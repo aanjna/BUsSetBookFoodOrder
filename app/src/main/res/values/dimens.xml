@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="order_food_text_size">20dp</dimen>
+    <dimen name="order_food_text_size_bus">24dp</dimen>
+    <dimen name="order_food_text_size_busname">38dp</dimen>
+    <dimen name="order_food_text_size_text">15dp</dimen>
+</resources>

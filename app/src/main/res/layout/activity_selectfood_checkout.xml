@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <include layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:id="@+id/notic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/jjj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.book.bus.busbooking.RoundedImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingRight="8dp"
+                android:src="@drawable/img5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please order food 2 hours perior to your journey between 9AM to 4PM daily."
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:layout_marginTop="20dp"
+            android:text="Enter a valid  mobile number"
+            android:textSize="@dimen/order_food_text_size_bus" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_selected"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkblue"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="checkout"
+        android:textColor="@color/white"
+        android:textSize="@dimen/order_food_text_size_busname"
+        android:textStyle="normal" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkblue"
+        android:padding="5dp"
+        android:textStyle="normal"
+        android:text="add to cart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/order_food_text_size" />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/addToCart">
+
+        <LinearLayout
+            android:id="@+id/notic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.book.bus.busbooking.RoundedImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="8dp"
+                android:src="@drawable/img5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Please order food 2 hours perior to your journey between 9AM to 4PM daily."
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_text" />
+        </LinearLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_fooditem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <!--<ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notic" />-->
+    </LinearLayout>
+
+</RelativeLayout>

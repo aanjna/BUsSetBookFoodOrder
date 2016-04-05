@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_order_tikit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Order id#"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_busname" />
+
+            <TextView
+                android:id="@+id/tv_tikit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Order id"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_busname" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img3" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="20dp"
+        android:text="Thanks for ordering food \n please show the above ID to claim your food!"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Please collect uour food at: "
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <View
+            android:id="@+id/lineview"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_marginTop="20dp"
+            android:background="#f4f009" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <!--<ImageView
+                android:id="@+id/riv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@+id/lineview"
+                android:src="@drawable/line" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/stationimg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/img1" />
+
+        <LinearLayout
+            android:id="@+id/ll_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bustop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Stop Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_bus" />
+
+            <TextView
+                android:id="@+id/tv_stationadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus stop address"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/statio"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/img5" />
+
+        <LinearLayout
+            android:id="@+id/ll_stat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 PM onwords"
+                android:textColor="@color/white"
+                android:textSize="@dimen/order_food_text_size_bus" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Food Before 12 hours"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#f20808"
+        android:text="Review your food order"
+        android:textSize="24dp" />
+</LinearLayout>
+
+
+
+
